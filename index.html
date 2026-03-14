@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Los Santos Medical Center</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+body{
+background:#0a0a0a;
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:center;
+gap:40px;
+padding:20px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff3b3b;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+url(hero.jpg);
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero-box{
+
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+padding:50px;
+border-radius:20px;
+
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+margin-top:10px;
+opacity:0.8;
+}
+
+.btn{
+
+margin-top:25px;
+display:inline-block;
+padding:12px 35px;
+background:#ff2e2e;
+border-radius:30px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:0.3s;
+
+}
+
+.btn:hover{
+background:#ff4d4d;
+}
+
+/* SECTION */
+
+.section{
+
+padding:100px 10%;
+
+}
+
+.section h2{
+
+text-align:center;
+margin-bottom:50px;
+font-size:40px;
+color:#ff3b3b;
+
+}
+
+/* CARDS */
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.1);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+background:rgba(255,255,255,0.08);
+
+}
+
+/* EMPLOYEES */
+
+.employee{
+
+text-align:center;
+
+}
+
+.employee img{
+
+width:100px;
+height:100px;
+border-radius:50%;
+margin-bottom:10px;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+
+}
+
+.gallery img{
+
+width:100%;
+border-radius:15px;
+
+}
+
+/* FORM */
+
+form{
+
+max-width:600px;
+margin:auto;
+
+}
+
+input,textarea{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+
+}
+
+button{
+
+padding:12px 25px;
+background:#ff2e2e;
+border:none;
+border-radius:20px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+button:hover{
+background:#ff4d4d;
+}
+
+/* FOOTER */
+
+footer{
+
+margin-top:80px;
+padding:40px;
+text-align:center;
+background:#050505;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<a href="#about">Главная</a>
+<a href="#leaders">Сотрудники</a>
+<a href="#departments">Услуги</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h1>Los Santos Medical Center</h1>
+
+<p>Крупнейший медицинский центр штата</p>
+
+<a class="btn" href="#about">Подробнее</a>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>🏥 О больнице</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Los Santos Medical Center</h3> учреждение экстренной и плановой медицинской помощи, обеспечивающее здоровье и безопасность населения. LSMC несет ответственность за оказание неотложной помощи при чрезвычайных ситуациях, лечение критических состояний, реабилитацию пациентов, а также профилактику заболеваний. Действует на территории города Лос-Сантос и прилегающих районов.
+</div>
+
+<div class="card">
+<h3>Сотрудниками медицинских центров руководят:</h3>
+<p>Губернатор - Вице-Губернатор</p>
+<p>Министр Здравоохранения</p>
+<p>Советники Министра Здравоохранения</p>
+<p>Главный врач</p>
+<p>Заместитель Главного врача</p>
+</div>
+
+<div class="card">
+<h3>Основные задачи медицинского центра:</h3>
+<p>• оказание первой медицинской помощи</p>
+<p>• лечение граждан штата</p>
+<p>• реагирование на чрезвычайные ситуации</p>
+<p>• медицинская эвакуация</p>
+<p>• профилактика заболеваний</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="leaders" class="section">
+
+<h2>👨‍⚕️ Сотрудники</h2>
+
+<div class="cards">
+
+<div class="card employee">
+<h3>Главный врач</h3>
+<h2>Demi Takers</h2>
+</div>
+
+<div class="card employee">
+<h3>Заместители</h3>
+<p>Dmitro Dudka</p>
+<p>Andrey Safonov</p>
+<p>Anastasia Mur</p>
+</div>
+
+<div class="card employee">
+<h3>Лучшие сотрудники</h3>
+<p>Ekaterina Lodr</p>
+<p>Katya Pather</p>
+<p>Safron Viper</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="departments" class="section">
+
+<h2>🚑 Услуги</h2>
+
+<div class="cards">
+
+<div class="card">
+⭐ <b>Отзывы о сотрудниках</b><br><br>
+Здесь граждане могут оставить отзыв о работе сотрудников в официальном дискорд сервере. Мы ценим мнение каждого жителя 
+штата и стараемся улучшать качество медицинской помощи.
+</div>
+
+<div class="card">
+📄 <b>Трудоустройство</b><br><br>
+Los Santos Medical Center открыт для новых сотрудников. 
+Если вы хотите помогать людям и работать в медицинской 
+службе, вы можете подать заявление на вступление в официальном дискорд сервере.
+</div>
+
+<div class="card">
+⚠️ <b>Жалобы на сотрудников</b><br><br>
+Если вы столкнулись с нарушением со стороны сотрудника Los Santos Medical Center, вы можете оставить жалобу в официальном дискорд сервере.
+
+</div>
+
+<div class="card">
+🏥 <b>Back to home</b><br><br>
+Подайте заявку через официальный дискорд сервер.
+</div>
+
+</div>
